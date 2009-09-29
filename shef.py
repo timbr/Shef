@@ -33,6 +33,7 @@ if __name__ == '__main__':
     if  len(args) == 1:
         searchstring = args[0]
         filepaths=glob.glob('\\\\Sheffield\\SPD_Data\\_SPD Drawings\\1.1.Issued (DIN)\\*\\*'+searchstring+'*')
+        filepaths=filepaths + glob.glob('\\\\Sheffield\\SPD_Data\\Temporary\\TimBrowning\\Drawings\\*'+searchstring+'*')
         print
         num = 0
         for filepath in filepaths:
